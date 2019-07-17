@@ -10,8 +10,8 @@ from .Utilities import frames_to_video
 def create_handshape_overlay(image_to_annotate,handshape, root, frame_dir):
     output_directory = root
        
-    font = ImageFont.truetype('/Library/Fonts/Arial.ttf', 80)
-    #font = ImageFont.load_default()
+    #font = ImageFont.truetype('/Library/Fonts/Arial.ttf', 80)
+    font = ImageFont.load_default()
     img = Image.open(image_to_annotate)
     draw = ImageDraw.Draw(img)
     overlay = handshape
